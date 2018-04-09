@@ -13,7 +13,7 @@ class App extends Component {
                     <header className={'header'}>
                         <div className="container">
                             <div className={'title-logo'}>
-                                <img src="/images/logo-vector.svg" alt=""/>
+                                <img src="./images/logo-vector.svg" alt=""/>
                                 <div className="text">Hirakuve</div>
                             </div>
                             <ul className={'menu'}>
