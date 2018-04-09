@@ -10,7 +10,6 @@ class UserContainer extends Component {
 
         return (
             <div className={'User'}>
-                <div className="user-info-text">{console.log(this.props)}</div>
                 <img src={this.props.user.picture.medium} alt="Avatar" className="avatar"/>
                 <ul className="user-info">
                     <li className="user-info-text name">{setUpName(this.props.user.name)}</li>

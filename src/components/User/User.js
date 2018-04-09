@@ -1,49 +1,8 @@
-let user = {
-    results: [{
-        gender: "female",
-        name: {
-            title: "ms",
-            first: "peppi",
-            last: "lauri"
-        },
-        location: {
-            street: "8264 siilitie",
-            city: "urjala",
-            state: "tavastia proper",
-            postcode: 83947
-        },
-        email: "peppi.lauri@example.com",
-        login: {
-            username: "beautifulbear646",
-            password: "someone",
-            salt: "az7W4ET4",
-            md5: "8c3fa46f5a4f156301e0d0b834bd5d00",
-            sha1: "7d53ef64222b82129b9567bf4b7ebd7c25e03424",
-            sha256: "4ff9bc171a6c3bbe534717a6740076c30bb84c6c8d0781ddee1319f4c5c8c634"
-        },
-        dob: "1981-08-01 14:57:47",
-        registered: "2006-08-07 19:37:25",
-        phone: "02-921-176",
-        cell: "048-865-62-62",
-        id: {
-            name: "HETU",
-            value: "1381-156D"
-        },
-        picture: {
-            large: "https://randomuser.me/api/portraits/women/23.jpg",
-            medium: "https://randomuser.me/api/portraits/med/women/23.jpg",
-            thumbnail: "https://randomuser.me/api/portraits/thumb/women/23.jpg"
-        },
-        nat: "FI"
-    }],
-    info: {
-        seed: "1c6e0d8f3c29abc5",
-        results: 1,
-        page: 1,
-        version: "1.1"
-    }
-};
+import createRequest from "../../HttpClient";
+let user = {"results":[{"gender":"female","name":{"title":"miss","first":"filippa","last":"johansen"},"location":{"street":"6484 byvænget","city":"hirtsals","state":"syddanmark","postcode":47187},"email":"filippa.johansen@example.com","login":{"username":"yellowelephant849","password":"litle","salt":"wN4MNJ9M","md5":"bd5da627f1bc299909088f68a477e9dd","sha1":"012a1d47a85903d02c9a2d0b3a8f1e61d4c70705","sha256":"ee01f49af58d190cee178500e8ca8412032228488f30af7a0462272ed672a352"},"dob":"1980-09-05 12:08:37","registered":"2016-07-12 22:16:51","phone":"69993032","cell":"19179135","id":{"name":"CPR","value":"788390-7002"},"picture":{"large":"https://randomuser.me/api/portraits/women/40.jpg","medium":"https://randomuser.me/api/portraits/med/women/40.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/women/40.jpg"},"nat":"DK"}],"info":{"seed":"dc63027e1085c450","results":1,"page":1,"version":"1.1"}}
 
-export default function getUserInfo(url) {
+export default function getUserInfo() {
+    // createRequest('https://randomuser.me/api/', )
     return user.results[0];
 };
+

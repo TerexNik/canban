@@ -3,6 +3,7 @@ import UserContainer from "./User/UserContainer";
 import getUserInfo from "./User/User";
 import '../img/logo-vector.svg'
 import './App.scss'
+import createRequest from "../HttpClient";
 
 class App extends Component {
     render() {
@@ -24,7 +25,7 @@ class App extends Component {
                     </header>
                     <div className="block1">
                         <div className="container">
-                            <UserContainer user = {getUserInfo('')}/>
+                            <UserContainer user={getUserInfo()}/>
                         </div>
                     </div>
                     <div className="block2">

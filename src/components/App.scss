@@ -1,4 +1,5 @@
 @import "../_misc/vars";
+@import "../_misc/mixins";
 
 .App {
   height: 100%;
@@ -72,6 +73,7 @@
   font-size: 26px;
   border: dashed 1px $darkGreen;
   box-shadow: 0 0 3px #333;
+  @include no-select();
 }
 
 .get-user-button:hover {
