@@ -1,0 +1,78 @@
+// adjustment vars
+$footer-height: 165px;
+$container-width: 1044px;
+
+// adjustment styles
+body, html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-size: 16px;
+	line-height: 1.42;
+	-webkit-font-smoothing: antialiased;
+	background: $white;
+	font-family: 'Montserrat', sans-serif;
+	color: $green-main;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	position: relative;
+	min-width: $container-width + 20px;
+}
+
+.wrapper:after {
+	content: "";
+	display: block;
+	height: $footer-height;
+	overflow: hidden;
+}
+
+.maincontent {
+}
+
+.container {
+	width: $container-width;
+	margin: 0 auto;
+}
+
+li {
+	list-style: none;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: $green-main;
+}
+
+a:hover {
+	color: $darkGreen;
+}
+
+.footer {
+	height: $footer-height;
+	width: 100%; 
+	margin-top: -$footer-height;
+	position: relative;
+	min-width: $container-width + 20px;
+	background: $balsamic;
+	color: $white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	font-weight: normal;
+}
+
+.strong {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}

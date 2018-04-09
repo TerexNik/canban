@@ -43,3 +43,7 @@ let user = {
         version: "1.1"
     }
 };
+
+export default function getUserInfo(url) {
+    return user.results[0];
+};
