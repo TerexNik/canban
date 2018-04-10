@@ -1,5 +1,4 @@
-
- function createRequest(url, callback, method = "GET") {
+export default function createRequest(url, callback, method = "GET") {
          const httpRequest = new XMLHttpRequest();
          httpRequest.onreadystatechange = () => {
              if (httpRequest.readyState === 4 && httpRequest.status === 200)
@@ -9,4 +8,3 @@
          httpRequest.open(method, url, true);
          httpRequest.send(null);
  }
- export default createRequest;

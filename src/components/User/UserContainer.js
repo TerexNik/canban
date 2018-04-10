@@ -3,6 +3,9 @@ import './user.scss'
 
 class UserContainer extends Component {
     render() {
+        console.log('Props: ');
+        console.log(this.props);
+
         function setUpName(name) {
             let firstLetterUpperCase = str => str[0].toUpperCase() + str.substring(1);
             return name.title.toUpperCase() + " " + firstLetterUpperCase(name.first) + " " + firstLetterUpperCase(name.last);

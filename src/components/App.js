@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
-import UserContainer from "./User/UserContainer";
-import getUserInfo from "./User/User";
 import '../img/logo-vector.svg'
 import './App.scss'
-import createRequest from "../HttpClient";
+import User from "./User/User";
 
 class App extends Component {
     render() {
@@ -25,7 +23,7 @@ class App extends Component {
                     </header>
                     <div className="block1">
                         <div className="container">
-                            <UserContainer user={getUserInfo()}/>
+                            <User/>
                         </div>
                     </div>
                     <div className="block2">
