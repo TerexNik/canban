@@ -1,0 +1,24 @@
+@import "../../_misc/vars";
+@import "../../_misc/mixins";
+
+.get-user-button {
+  width: 530px;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin: 60px auto 0 auto;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  color: $darkGreen;
+  font-size: 26px;
+  border: dashed 1px $darkGreen;
+  box-shadow: 0 0 3px #333;
+  @include no-select();
+}
+
+.get-user-button:hover {
+  cursor: pointer;
+  background: $balsamic;
+  color: $white;
+  border: dashed 1px $white;
+}

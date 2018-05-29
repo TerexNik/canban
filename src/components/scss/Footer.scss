@@ -1,0 +1,20 @@
+.footer {
+  box-shadow: 0px -3px 10px #333;
+}
+
+.footer-box {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 25px;
+  font-weight: 200;
+}
+
+.footer-box-item {
+  width: 320px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.footer-list-text {
+  margin-top: 10px;
+}

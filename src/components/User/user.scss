@@ -18,9 +18,15 @@
   border: dashed 2px $green-main;
   border-radius: 3px 15px;
   margin-right: 10px;
+  width: 70px;
+  height: 70px;
 }
 
 .User .name {
   font-weight: 400;
   color: $green-main;
+}
+
+.loader {
+  text-align: center;
 }
