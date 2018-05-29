@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import './scss/App.scss'
 import Header from "./Header";
-import SingleUserForm from "./SingleUserForm";
 import Footer from "./Footer";
+import Content from "./Content";
 
 class App extends Component {
     render() {
@@ -10,7 +10,7 @@ class App extends Component {
             <div className={'App'}>
                 <div className="wrapper">
                     <Header/>
-                    <SingleUserForm/>
+                    <Content/>
                 </div>
                 <Footer/>
             </div>
