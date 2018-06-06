@@ -6,10 +6,6 @@ class Content extends Component {
     render() {
         return (
             <div className={'Content'}>
-                <div className="center">
-                    <input type="checkbox" id={"cbx"} className={"hide"}/>
-                    <label htmlFor={"cbx"} className={"toggle"}><span></span></label>
-                </div>
                 <SingleUserForm/>
             </div>
         )
